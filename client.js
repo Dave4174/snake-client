@@ -18,6 +18,12 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Successfully connected to game server.');
     conn.write('Name: JDL');
+    // setInterval(() => {
+    //   conn.write('Move: left');
+    // }, 50);
+    // setTimeout(() => {
+    //   conn.write('Move: left');
+    // }, 50);
   });
 
   return conn;
