@@ -21,13 +21,13 @@ const handleUserInput = function (key) {
   if (key === '\u0003') {
     process.exit();
   } else if (key === 'w') {
-    conn.write('Move: up');
+    connection.write('Move: up');
   } else if (key === 'a') {
-    conn.write('Move: left');
+    connection.write('Move: left');
   } else if (key === 's') {
-    conn.write('Move: down');
+    connection.write('Move: down');
   } else if (key === 'd') {
-    conn.write('Move: right');
+    connection.write('Move: right');
   }
 }
 
